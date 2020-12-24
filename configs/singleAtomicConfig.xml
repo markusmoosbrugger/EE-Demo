@@ -7,4 +7,7 @@
     <property name="filePath">/home/fedor/Repositories/gitHub/EE-Demo/inputData/inputSingleAtomic.json</property>
   </module>
   <module class="at.uibk.dps.ee.io.modules.OutputPrinterModule"/>
+  <module class="at.uibk.dps.ee.visualization.modules.EnactmentViewerModule">
+    <property name="closeOnTerminate">false</property>
+  </module>
 </configuration>
