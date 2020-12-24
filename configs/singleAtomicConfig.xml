@@ -1,0 +1,10 @@
+<configuration>
+  <module class="at.uibk.dps.ee.control.modules.EnactmentManagementModule"/>
+  <module class="at.uibk.dps.ee.io.modules.AfclReaderFileModule">
+    <property name="filePath">/home/fedor/Repositories/gitHub/EE-Demo/demoWfs/singleAtomic.yaml</property>
+  </module>
+  <module class="at.uibk.dps.ee.io.modules.InputReaderFileModule">
+    <property name="filePath">/home/fedor/Repositories/gitHub/EE-Demo/inputData/inputSingleAtomic.json</property>
+  </module>
+  <module class="at.uibk.dps.ee.io.modules.OutputPrinterModule"/>
+</configuration>
