@@ -1,0 +1,86 @@
+---
+name: "simple_if"
+dataIns:
+  - name: "input1"
+    type: "number"
+    source: "a"
+  - name: "input2"
+    type: "number"
+    source: "b"
+  - name: "waitTime"
+    type: "number"
+    source: "wait"    
+  - name: "cond1"
+    type: "bool"
+    source: "c1"
+  - name: "cond2"
+    type: "string"
+    source: "c2"        
+workflowBody:
+  - if:
+      name: "ifCompound"
+      dataIns:
+        - name: "num1"
+          type: "number"
+          source: "simple_if/input1"
+        - name: "num2"
+          type: "number"
+          source: "simple_if/input2"
+        - name: "c1"
+          type: "bool"
+          source: "simple_if/cond1"
+        - name: "c2"
+          type: "string"
+          source: "simple_if/cond2"                    
+      condition:
+        combinedWith: "and"
+        conditions:
+          - data1: "ifCompound/c1"
+            data2: "true"
+            operator: "AND"
+          - data1: "simple_if/cond2"
+            data2: "abc"
+            operator: "startsWith"
+            negation: "true"
+      then:
+        - function:
+            name: "addition_Demo"
+            type: "local"
+            dataIns:
+              - name: "firstSummand"
+                type: "number"
+                source: "simple_if/input1"
+              - name: "secondSummand"
+                type: "number"
+                source: "5"
+              - name: "waitTimeIn"
+                type: "number"
+                source: "simple_if/waitTime"                                
+            dataOuts:
+              - name: "sum"
+                type: "number"
+      else:
+        - function:
+            name: "substraction_Demo"
+            type: "local"
+            dataIns:
+              - name: "minuend"
+                type: "number"
+                source: "ifCompound/num1"
+              - name: "subtrahend"
+                type: "number"
+                source: "ifCompound/num2"
+              - name: "waitTimeIn"
+                type: "number"
+                source: "simple_if/waitTime"                                
+            dataOuts:
+              - name: "difference"
+                type: "number"
+      dataOuts:
+        - name: "res"
+          type: "number"
+          source: "addition_Demo/sum,substraction_Demo/difference"
+dataOuts:
+  - name: "wf_result"
+    type: "number"
+    source: "ifCompound/res"

@@ -1,0 +1,13 @@
+<configuration>
+  <module class="at.uibk.dps.ee.control.modules.EnactmentManagementModule"/>
+  <module class="at.uibk.dps.ee.io.modules.AfclReaderFileModule">
+    <property name="filePath">/home/fedor/Repositories/gitHub/EE-Demo/demoWfs/simpleIf.yaml</property>
+  </module>
+  <module class="at.uibk.dps.ee.io.modules.InputReaderFileModule">
+    <property name="filePath">/home/fedor/Repositories/gitHub/EE-Demo/inputData/simpleIf.json</property>
+  </module>
+  <module class="at.uibk.dps.ee.io.modules.OutputPrinterModule"/>
+  <module class="at.uibk.dps.ee.visualization.modules.EnactmentViewerModule">
+    <property name="closeOnTerminate">false</property>
+  </module>
+</configuration>
