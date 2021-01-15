@@ -5,6 +5,6 @@
   "input4" : 11,
   "input5" : -8,
   "input6" : 1,
-  "wait1":2,
-  "wait2":1
+  "wait1":2000,
+  "wait2":1000
 }

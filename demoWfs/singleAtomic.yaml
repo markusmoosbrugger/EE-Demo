@@ -24,8 +24,6 @@ workflowBody:
       dataOuts: 
         - name: "sum"
           type: "number"
-        - name: "waitTimeOut"
-          type: "number"
       properties:
         - name: "resource"
           value: "my_res_link" 
