@@ -2,5 +2,5 @@
   "input1" : 3,
   "input2" : 2,
   "input3" : 7,
-  "wait":2
+  "wait":2000
 }
