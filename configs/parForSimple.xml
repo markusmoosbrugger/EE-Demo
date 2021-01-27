@@ -1,10 +1,10 @@
 <configuration>
   <module class="at.uibk.dps.ee.control.modules.EnactmentManagementModule"/>
   <module class="at.uibk.dps.ee.io.modules.AfclReaderFileModule">
-    <property name="filePath">./demoWfs/sixAtomics.yaml</property>
+    <property name="filePath">./demoWfs/parForSimple.yaml</property>
   </module>
   <module class="at.uibk.dps.ee.io.modules.InputReaderFileModule">
-    <property name="filePath">./inputData/sixAtomic.json</property>
+    <property name="filePath">./inputData/parForSimple.json</property>
   </module>
   <module class="at.uibk.dps.ee.io.modules.OutputPrinterModule"/>
   <module class="at.uibk.dps.ee.visualization.modules.EnactmentViewerModule">

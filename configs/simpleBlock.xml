@@ -1,10 +1,10 @@
 <configuration>
   <module class="at.uibk.dps.ee.control.modules.EnactmentManagementModule"/>
   <module class="at.uibk.dps.ee.io.modules.AfclReaderFileModule">
-    <property name="filePath">/home/fedor/Repositories/gitHub/EE-Demo/demoWfs/simpleBlock.yaml</property>
+    <property name="filePath">./demoWfs/simpleBlock.yaml</property>
   </module>
   <module class="at.uibk.dps.ee.io.modules.InputReaderFileModule">
-    <property name="filePath">/home/fedor/Repositories/gitHub/EE-Demo/inputData/simpleBlock.json</property>
+    <property name="filePath">./inputData/simpleBlock.json</property>
   </module>
   <module class="at.uibk.dps.ee.io.modules.OutputPrinterModule"/>
   <module class="at.uibk.dps.ee.visualization.modules.EnactmentViewerModule">
