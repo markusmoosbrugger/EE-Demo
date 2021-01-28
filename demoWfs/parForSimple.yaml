@@ -11,7 +11,7 @@ workflowBody:
       dataIns:
         - name: "firstSummand"
           type: "number"
-          source: 1
+          source: 2
         - name: "secondSummand"
           type: "number"
           source: 2
