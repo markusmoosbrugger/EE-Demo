@@ -28,7 +28,7 @@ dataIns:
 workflowBody:
   - function:
       name: "addition_Demo1"
-      type: "local"
+      type: "Addition"
       dataIns:
         - name: "firstSummand"
           type: "number"
@@ -47,7 +47,7 @@ workflowBody:
           value: "my_res_link"
   - function:
       name: "addition_Demo2"
-      type: "local"
+      type: "Addition"
       dataIns:
         - name: "firstSummand"
           type: "number"
@@ -66,7 +66,7 @@ workflowBody:
           value: "my_res_link"
   - function:
       name: "addition_Demo3"
-      type: "local"
+      type: "Addition"
       dataIns:
         - name: "firstSummand"
           type: "number"
@@ -85,7 +85,7 @@ workflowBody:
           value: "my_res_link"
   - function:
       name: "addition_Demo4"
-      type: "local"
+      type: "Addition"
       dataIns:
         - name: "firstSummand"
           type: "number"
@@ -104,7 +104,7 @@ workflowBody:
           value: "my_res_link"
   - function:
       name: "addition_Demo5"
-      type: "local"
+      type: "Addition"
       dataIns:
         - name: "firstSummand"
           type: "number"
@@ -123,7 +123,7 @@ workflowBody:
           value: "my_res_link"
   - function:
       name: "addition_Demo6"
-      type: "local"
+      type: "Addition"
       dataIns:
         - name: "firstSummand"
           type: "number"

@@ -1,0 +1,16 @@
+[
+  {"functionType" : "Addition",
+    "resources": [      
+      {"type": "Local",
+        "properties": {}
+      }
+      ]
+  },
+  {"functionType" : "Subtraction",
+    "resources": [      
+      {"type": "Local",
+        "properties": {}
+      }
+      ]
+  }
+]

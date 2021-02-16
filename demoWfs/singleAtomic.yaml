@@ -10,7 +10,7 @@ dataIns:
 workflowBody:
   - function:
       name: "addition_Demo"
-      type: "local"
+      type: "Addition"
       dataIns:
         - name: "firstSummand"
           type: "number"
