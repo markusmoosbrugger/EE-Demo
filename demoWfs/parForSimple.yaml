@@ -7,7 +7,7 @@ dataIns:
 workflowBody:
   - function:
       name: "addition_Demo3"
-      type: "local"
+      type: "Addition"
       dataIns:
         - name: "firstSummand"
           type: "number"
@@ -34,7 +34,7 @@ workflowBody:
       loopBody:
         - function:
             name: "addition_Demo"
-            type: "local"
+            type: "Addition"
             dataIns:
             - name: "firstSummand"
               type: "number"
@@ -50,7 +50,7 @@ workflowBody:
               type: "number"
         - function:
             name: "addition_Demo2"
-            type: "local"
+            type: "Addition"
             dataIns:
             - name: "firstSummand"
               type: "number"
@@ -70,7 +70,7 @@ workflowBody:
           source: "addition_Demo2/sum"
   - function:
       name: "collectionSum_Demo"
-      type: "local"
+      type: "SumCollection"
       dataIns:
         - name: "collectionToSum"
           type: "collection"

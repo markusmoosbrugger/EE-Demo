@@ -27,12 +27,12 @@ repositories {
 }
 
 dependencies {
-	implementation 'com.github.Apollo-Core:EE-Core:enactmenState-SNAPSHOT'
-	implementation 'com.github.Apollo-Core:EE-Guice:enactmenState-SNAPSHOT'
-	implementation 'com.github.Apollo-Core:EE-Model:enactmenState-SNAPSHOT'
-	implementation 'com.github.Apollo-Core:EE-IO:enactmentState-SNAPSHOT'
-	implementation 'com.github.Apollo-Core:EE-Enactables:enactmenState-SNAPSHOT'
-	implementation 'com.github.Apollo-Core:EE-Control:enactmentState-SNAPSHOT'
+	implementation 'com.github.Apollo-Core:EE-Core:master-SNAPSHOT'
+	implementation 'com.github.Apollo-Core:EE-Guice:main-SNAPSHOT'
+	implementation 'com.github.Apollo-Core:EE-Model:main-SNAPSHOT'
+	implementation 'com.github.Apollo-Core:EE-IO:main-SNAPSHOT'
+	implementation 'com.github.Apollo-Core:EE-Enactables:master-SNAPSHOT'
+	implementation 'com.github.Apollo-Core:EE-Control:master-SNAPSHOT'
     implementation 'com.github.Apollo-Core:SC-Core:main-SNAPSHOT'
 	implementation 'com.github.FedorSmirnov89:EE-Visualization:master-SNAPSHOT'
 	
