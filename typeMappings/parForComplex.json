@@ -5,5 +5,12 @@
         "properties": {}
       }
       ]
+  },
+    {"functionType" : "SumCollection",
+    "resources": [      
+      {"type": "Local",
+        "properties": {}
+      }
+      ]
   }
 ]
