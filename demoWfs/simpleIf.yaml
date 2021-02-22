@@ -45,7 +45,7 @@ workflowBody:
       then:
         - function:
             name: "addition_Demo"
-            type: "local"
+            type: "Addition"
             dataIns:
               - name: "firstSummand"
                 type: "number"
@@ -62,7 +62,7 @@ workflowBody:
       else:
         - function:
             name: "substraction_Demo"
-            type: "local"
+            type: "Subtraction"
             dataIns:
               - name: "minuend"
                 type: "number"

@@ -11,7 +11,7 @@ dataIns:
 workflowBody:
   - function:
       name: "collectionSum_Demo"
-      type: "local"
+      type: "SumCollection"
       dataIns:
         - name: "collectionToSum"
           type: "collection"
