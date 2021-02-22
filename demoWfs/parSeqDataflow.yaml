@@ -7,7 +7,7 @@ dataIns:
 workflowBody:
   - function:
       name: "collectionSum_Demo"
-      type: "local"
+      type: "SumCollection"
       dataIns:
       - name: "collectionToSum"
         type: "collection"
@@ -20,7 +20,7 @@ workflowBody:
         type: "number"
   - function:
       name: "collectionSum_Demo2"
-      type: "local"
+      type: "SumCollection"
       dataIns:
       - name: "collectionToSum"
         type: "collection"
@@ -38,7 +38,7 @@ workflowBody:
         type: "number"
   - function:
       name: "collectionSum_Demo3"
-      type: "local"
+      type: "SumCollection"
       dataIns:
       - name: "collectionToSum"
         type: "collection"
@@ -56,7 +56,7 @@ workflowBody:
         type: "number"
   - function:
       name: "collectionSum_Demo4"
-      type: "local"
+      type: "SumCollection"
       dataIns:
       - name: "collectionToSum"
         type: "collection"
@@ -76,7 +76,7 @@ workflowBody:
         type: "number"
   - function:
       name: "addition_Demo"
-      type: "local"
+      type: "Addition"
       dataIns:
       - name: "firstSummand"
         type: "number"

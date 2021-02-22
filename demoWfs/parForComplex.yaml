@@ -24,7 +24,7 @@ workflowBody:
     loopBody:
     - function:
         name: "addition_Demo"
-        type: "local"
+        type: "Addition"
         dataIns:
         - name: "firstSummand"
           type: "collection"
@@ -58,7 +58,7 @@ workflowBody:
         loopBody:
         - function:
             name: "addition_Demo2"
-            type: "local"
+            type: "Addition"
             dataIns:
             - name: "firstSummand"
               type: "collection"
@@ -94,7 +94,7 @@ workflowBody:
             loopBody:
             - function:
                 name: "addition_Demo3"
-                type: "local"
+                type: "Addition"
                 dataIns:
                 - name: "firstSummand"
                   type: "collection"
