@@ -1,5 +1,7 @@
 <configuration>
-  <module class="at.uibk.dps.ee.control.modules.EnactmentAgentModule"/>
+  <module class="at.uibk.dps.ee.control.modules.EnactmentAgentModule">
+    <property name="pauseOnStart">false</property>
+  </module>
   <module class="at.uibk.dps.ee.io.modules.InputReaderFileModule">
     <property name="filePath">./inputData/parForComplex.json</property>
   </module>
@@ -8,8 +10,8 @@
     <property name="filePathAfcl">./demoWfs/parForComplex.yaml</property>
     <property name="filePathMappingFile">./typeMappings/parForComplex.json</property>
   </module>
-  <module class="at.uibk.dps.ee.visualization.modules.EnactmentViewerModule">
-    <property name="closeOnTerminate">false</property>
+  <module class="at.uibk.dps.sc.core.modules.SchedulerModule">
+    <property name="schedulingMode">SingleOption</property>
+    <property name="mappingsToPick">1</property>
   </module>
-  <module class="at.uibk.dps.sc.core.modules.SchedulerModule"/>
 </configuration>
