@@ -1,0 +1,15 @@
+<configuration>
+  <module class="at.uibk.dps.ee.control.modules.EnactmentAgentModule"/>
+  <module class="at.uibk.dps.ee.io.modules.InputReaderFileModule">
+    <property name="filePath">./inputData/parForComplex.json</property>
+  </module>
+  <module class="at.uibk.dps.ee.io.modules.OutputPrinterModule"/>
+  <module class="at.uibk.dps.ee.io.modules.SpecificationInputModule">
+    <property name="filePathAfcl">./demoWfs/parForComplex.yaml</property>
+    <property name="filePathMappingFile">./typeMappings/parForComplex.json</property>
+  </module>
+  <module class="at.uibk.dps.ee.visualization.modules.EnactmentViewerModule">
+    <property name="closeOnTerminate">false</property>
+  </module>
+  <module class="at.uibk.dps.sc.core.modules.SchedulerModule"/>
+</configuration>
