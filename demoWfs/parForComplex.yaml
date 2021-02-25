@@ -73,7 +73,7 @@ workflowBody:
               type: "number"
               source: 2000
             dataOuts:
-            - name: "sum2"
+            - name: "sum"
               type: "number"
         - parallelFor:
             name: "parallelFor3"
@@ -109,16 +109,16 @@ workflowBody:
                   type: "number"
                   source: 2000
                 dataOuts:
-                - name: "sum3"
+                - name: "sum"
                   type: "number"
             dataOuts:
             - name: "result_collection3"
               type: "collection"
-              source: "addition_Demo3/sum3"
+              source: "addition_Demo3/sum"
         dataOuts:
         - name: "result_collection_parallelFor2_2"
           type: "collection"
-          source: "addition_Demo2/sum2"
+          source: "addition_Demo2/sum"
         - name: "result_collection_parallelFor2_3"
           type: "collection"
           source: "parallelFor3/result_collection3"
