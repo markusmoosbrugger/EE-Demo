@@ -4,9 +4,6 @@ dataIns:
   - name: "input1"
     type: "number"
     source: "a"
-  - name: "input2"
-    type: "number"
-    source: "b"
   - name: "waitTime"
     type: "number"
     source: "wait"    
@@ -62,27 +59,10 @@ workflowBody:
             dataOuts:
               - name: "sum"
                 type: "number"
-      else:
-        - function:
-            name: "substraction_Demo"
-            type: "Subtraction"
-            dataIns:
-              - name: "minuend"
-                type: "number"
-                source: "ifCompound/num1"
-              - name: "subtrahend"
-                type: "number"
-                source: "ifCompound/num2"
-              - name: "waitTimeIn"
-                type: "number"
-                source: "simple_if/waitTime"                                
-            dataOuts:
-              - name: "difference"
-                type: "number"
       dataOuts:
         - name: "res"
           type: "number"
-          source: "addition_Demo/sum,substraction_Demo/difference"
+          source: "addition_Demo/sum,simple_if/input1"
 dataOuts:
   - name: "wf_result"
     type: "number"
