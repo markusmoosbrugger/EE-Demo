@@ -27,6 +27,16 @@ repositories {
 }
 
 dependencies {
+  if (project.hasProperty("local")) {
+    implementation project (':EE-Core')
+    implementation project (':EE-Guice')
+    implementation project (':EE-Model')
+    implementation project (':EE-IO')
+    implementation project (':EE-Enactables')
+    implementation project (':SC-Core')
+    implementation project (':EE-Control')
+    implementation project (':EE-Visualization')
+}else {
 	implementation 'com.github.Apollo-Core:EE-Core:master-SNAPSHOT'
 	implementation 'com.github.Apollo-Core:EE-Guice:main-SNAPSHOT'
 	implementation 'com.github.Apollo-Core:EE-Model:main-SNAPSHOT'
@@ -35,6 +45,7 @@ dependencies {
 	implementation 'com.github.Apollo-Core:EE-Control:master-SNAPSHOT'
     implementation 'com.github.Apollo-Core:SC-Core:main-SNAPSHOT'
 	implementation 'com.github.FedorSmirnov89:EE-Visualization:master-SNAPSHOT'
+}
 	
 	// dependency to Opt4J
 	implementation 'com.github.FedorSmirnov89:opt4j:-SNAPSHOT'
