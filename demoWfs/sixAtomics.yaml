@@ -108,10 +108,10 @@ workflowBody:
       dataIns:
         - name: "firstSummand"
           type: "number"
-          source: "addition_Demo2/sum"
+          source: "addition_Demo3/sum"
         - name: "secondSummand"
           type: "number"
-          source: "addition_Demo3/sum"
+          source: "addition_Demo4/sum"
         - name: "waitTimeIn"
           type: "number"
           source: "sixAtomics/wait1"
@@ -121,26 +121,7 @@ workflowBody:
       properties:
         - name: "resource"
           value: "my_res_link"
-  - function:
-      name: "addition_Demo6"
-      type: "Addition"
-      dataIns:
-        - name: "firstSummand"
-          type: "number"
-          source: "addition_Demo4/sum"
-        - name: "secondSummand"
-          type: "number"
-          source: "addition_Demo5/sum"
-        - name: "waitTimeIn"
-          type: "number"
-          source: "sixAtomics/wait1"
-      dataOuts: 
-        - name: "sum"
-          type: "number"
-      properties:
-        - name: "resource"
-          value: "my_res_link"          
 dataOuts:
   - name: "result"
     type: "number"
-    source: "addition_Demo6/sum"
+    source: "addition_Demo5/sum"
