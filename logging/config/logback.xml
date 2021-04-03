@@ -1,7 +1,8 @@
 <configuration debug="false">
+	<property file="logging/config/database/mysql/mysql.properties"/>
 
 	<appender name="STDOUT"
-		class="ch.qos.logback.core.ConsoleAppender">	
+		class="ch.qos.logback.core.ConsoleAppender">
 		<encoder>
 			<pattern>%msg%n</pattern>
 		</encoder>
@@ -18,9 +19,19 @@
 		</encoder>
 	</appender>
 
-	<logger name="at.uibk.dps.ee.enactables.decorators.DecoratorTimingLog" level="INFO" additivity="false">
-    	<appender-ref ref="FUNCTION_LOG_TIME_FILE" />
-  	</logger>
+	<appender name="FUNCTION_LOG_DB" class="ch.qos.logback.classic.db.DBAppender">
+		<connectionSource class="ch.qos.logback.core.db.DriverManagerConnectionSource">
+			<driverClass>com.mysql.cj.jdbc.Driver</driverClass>
+			<url>jdbc:mysql://${db_instance}:${db_port}/${db_name}?useSSL=false</url>
+			<user>${user}</user>
+			<password>${password}</password>
+		</connectionSource>
+	</appender>
+
+	<logger name="at.uibk.dps.ee.enactables.logging.logback.LogbackEnactmentLogger" level="INFO"
+			additivity="true">
+		<appender-ref ref="FUNCTION_LOG_DB" />
+	</logger>
 
 	<root level="debug">
 		<appender-ref ref="STDOUT" />
