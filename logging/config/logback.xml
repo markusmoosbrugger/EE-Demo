@@ -28,8 +28,9 @@
 		</connectionSource>
 	</appender>
 
-	<logger name="at.uibk.dps.ee.enactables.logging.logback.LogbackEnactmentLogger" level="INFO"
+	<logger name="at.markusmoosbrugger.logging.logback.LogbackEnactmentLogger" level="INFO"
 			additivity="true">
+		<appender-ref ref="FUNCTION_LOG_TIME_FILE" />
 		<appender-ref ref="FUNCTION_LOG_DB" />
 	</logger>
 

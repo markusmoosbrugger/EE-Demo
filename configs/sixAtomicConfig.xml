@@ -5,6 +5,12 @@
   <module class="at.uibk.dps.ee.enactables.modules.FunctionsModule">
     <property name="logTime">true</property>
   </module>
+  <module class="at.markusmoosbrugger.modules.LoggingModule">
+    <property name="logFunctionProperties">true</property>
+    <property name="useLogback">true</property>
+    <property name="useInfluxDB">true</property>
+    <property name="useDynamoDB">true</property>
+  </module>
   <module class="at.uibk.dps.ee.io.modules.InputReaderFileModule">
     <property name="filePath">./inputData/sixAtomic.json</property>
   </module>
