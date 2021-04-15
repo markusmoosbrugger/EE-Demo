@@ -36,7 +36,7 @@ dependencies {
     implementation project (':SC-Core')
     implementation project (':EE-Control')
     implementation project (':EE-Visualization')
-	implementation project (':DB-Writer')
+	implementation project (':EE-Observer')
 
 }else {
 	implementation 'com.github.Apollo-Core:EE-Core:master-SNAPSHOT'

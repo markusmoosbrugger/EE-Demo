@@ -5,7 +5,7 @@
   <module class="at.uibk.dps.ee.enactables.modules.FunctionsModule">
     <property name="logTime">true</property>
   </module>
-  <module class="at.markusmoosbrugger.modules.LoggingModule">
+  <module class="at.uibk.dps.ee.observer.modules.LoggingModule">
     <property name="logFunctionProperties">true</property>
     <property name="useLogback">true</property>
     <property name="useInfluxDB">true</property>

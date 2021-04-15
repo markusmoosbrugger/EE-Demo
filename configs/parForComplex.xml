@@ -2,7 +2,7 @@
   <module class="at.uibk.dps.ee.control.modules.EnactmentAgentModule">
     <property name="pauseOnStart">false</property>
   </module>
-  <module class="at.markusmoosbrugger.modules.LoggingModule">
+  <module class="at.uibk.dps.ee.observer.modules.LoggingModule">
     <property name="logFunctionProperties">true</property>
     <property name="useLogback">true</property>
     <property name="useInfluxDB">true</property>
