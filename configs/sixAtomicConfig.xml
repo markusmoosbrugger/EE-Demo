@@ -2,14 +2,12 @@
   <module class="at.uibk.dps.ee.control.modules.EnactmentAgentModule">
     <property name="pauseOnStart">false</property>
   </module>
-  <module class="at.uibk.dps.ee.enactables.modules.FunctionsModule">
-    <property name="logTime">true</property>
-  </module>
   <module class="at.uibk.dps.ee.observer.modules.LoggingModule">
     <property name="logFunctionProperties">true</property>
     <property name="useLogback">true</property>
     <property name="useInfluxDB">true</property>
     <property name="useDynamoDB">true</property>
+    <property name="useJdbc">true</property>
   </module>
   <module class="at.uibk.dps.ee.io.modules.InputReaderFileModule">
     <property name="filePath">./inputData/sixAtomic.json</property>

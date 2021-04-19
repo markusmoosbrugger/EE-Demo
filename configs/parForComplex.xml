@@ -7,6 +7,7 @@
     <property name="useLogback">true</property>
     <property name="useInfluxDB">true</property>
     <property name="useDynamoDB">true</property>
+    <property name="useJdbc">true</property>
   </module>
   <module class="at.uibk.dps.ee.io.modules.InputReaderFileModule">
     <property name="filePath">./inputData/parForComplex.json</property>
